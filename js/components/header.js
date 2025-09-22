@@ -19,29 +19,33 @@ export const header = () => {
         </div>
 
        
-        <div class="flex items-center space-x-8">
+        <div class="flex items-center space-x-8 ">
           <input type="text" placeholder="Search..." class="px-3 py-1 border rounded-md text-sm hidden sm:block" />
+          
+          
+          <button class="relative">
+          <i class="fa-solid fa-heart"></i>
+          </button>
+          
+          <button class="relative">
+          <i class="fas fa-cart-shopping"></i>
+          <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs px-1 rounded-full">0</span>
+          </button>
           
           <img src="./assets/images/profile_img_1.png" alt="Profile" class="w-8 h-8 rounded-full object-cover" />
           
-          <button class="relative">
-           <i class="fa-solid fa-heart"></i>
-          </button>
-
-          <button class="relative">
-            <i class="fas fa-cart-shopping"></i>
-            <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs px-1 rounded-full">0</span>
-          </button>
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <div class="md:hidden">
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
           <button id="mobile-menu-toggle" class="text-gray-700 hover:text-green-700 focus:outline-none">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
-        </div>
+          </div>
+      </div>
+
+        
+        
       </div>
     </div>
 
