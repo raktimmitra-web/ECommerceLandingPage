@@ -105,6 +105,6 @@ async function loadProducts() {
   const res = await fetch("./data/products.json");
   const products = await res.json();
   console.log(products, "products");
-  renderProducts(products.slice(0,4));
+  renderProducts(products.slice(0,3));
 }
 document.addEventListener("DOMContentLoaded", loadProducts);
